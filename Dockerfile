@@ -3,7 +3,7 @@ MAINTAINER Benjamin Böhmke <benjamin@boehmke.net>
 
 # update system and get packages
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y munin && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y munin vim ruby && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
